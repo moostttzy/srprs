@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Rara!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Slide 1: Welcome -->
+        <div class="slide active" id="slide1">
+            <h1>🎉 Selamat Ulang Tahun, Rara! 🎂</h1>
+            <img src="foto1.jpg" alt="Foto Rara tersenyum" class="photo">
+            <p>Hai, Ra! Hari ini spesial banget, kan? Selamat ulang tahun ke-19! 🥳</p>
+            <button onclick="nextSlide()">Lanjut Yuk!</button>
+        </div>
+
+        <!-- Slide 2: Celebration -->
+        <div class="slide hidden" id="slide2">
+            <h1>🎁 Surprise Buat Rara</h1>
+            <img src="foto2.jpg" alt="Foto Rara lagi happy" class="photo">
+            <p>Rara yang selalu ceria, ini ada ucapan spesial buat kamu!</p>
+            <button onclick="revealGift()">Buka Kejutan 🎊</button>
+            <div id="gift" class="hidden">
+                <p>🎈 "Semoga makin sukses, sehat selalu, dan semua mimpi Rara tercapai. Love you, Ra!" 🎈</p>
+            </div>
+        </div>
+
+        <!-- Slide 3: Wish Wall -->
+        <div class="slide hidden" id="slide3">
+            <h1>🌟 Ucapan dan Harapan</h1>
+            <img src="foto3.jpg" alt="Foto Rara dengan teman-teman" class="photo">
+            <p>Tulis ucapan spesial kamu untuk Rara di bawah!</p>
+            <textarea id="wishInput" placeholder="Tulis harapan di sini..."></textarea>
+            <button onclick="submitWish()">Kirim Ucapan 💌</button>
+            <div id="wishWall"></div>
+        </div>
+
+        <!-- Slide 4: Closing -->
+        <div class="slide hidden" id="slide4">
+            <h1>💖 Terima Kasih!</h1>
+            <img src="foto4.jpg" alt="Foto kenangan manis Rara" class="photo">
+            <p>Selamat ulang tahun sekali lagi, Rara! Tetap jadi pribadi yang amazing dan inspiratif! 🥰</p>
+            <p class="signature">- Dari ambalabu yang selalu support kamu 🌟</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
